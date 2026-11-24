@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="Зрозумілий путівник Linux українською: дистрибутиви, безпечне встановлення та перші команди." data-i18n-content="meta.description">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Tuff Linux">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <title data-i18n="meta.title">Tuff Linux — путівник для початківців</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Перейти до основного вмісту</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Tuff Linux — на головну" data-i18n-aria="brand.home">
+      <img class="brand-icon" src="assets/tuxedo-penguin.jpg" alt="">
+      <span class="brand-name">Tuff <span class="brand-accent">Linux</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Основна навігація" data-i18n-aria="nav.label">
+      <a href="#about" data-i18n="nav.about">Про Linux</a>
+      <a href="#distros" data-i18n="nav.distros">Дистрибутиви</a>
+      <a href="#install" data-i18n="nav.install">Встановлення</a>
+      <a href="#terminal" data-i18n="nav.terminal">Термінал</a>
+    </nav>
+    <div class="header-controls">
+      <label class="sr-only" for="language-select" data-i18n="language.label">Мова</label>
+      <div class="language-control">
+        <select class="language-select" id="language-select" aria-label="Мова сайту" data-i18n-aria="language.aria">
+          <option value="uk">Українська</option>
+          <option value="cs">Čeština</option>
+        </select>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Увімкнути світлу тему" aria-pressed="false">
+      <span aria-hidden="true">☼</span>
+      <span class="theme-label" data-i18n="theme.label">Тема</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Мобільна навігація" data-i18n-aria="nav.label">
+      <a href="#about" data-i18n="nav.about">Про Linux</a>
+      <a href="#distros" data-i18n="nav.distros">Дистрибутиви</a>
+      <a href="#install" data-i18n="nav.install">Встановлення</a>
+      <a href="#terminal" data-i18n="nav.terminal">Термінал</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> <span data-i18n="hero.eyebrow">Твій перший крок у Linux</span></p>
+        <h1 data-i18n-html="hero.title">Свобода починається<br>з <span class="text-gradient">відкритого коду.</span></h1>
+        <p class="hero-copy" data-i18n="hero.copy">Linux — це не страшно і не лише для програмістів. Розберімося, що це таке і як спробувати його самому.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#about"><span data-i18n="hero.primary">Почати знайомство</span> <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#distros" data-i18n="hero.secondary">Обрати дистрибутив</a>
+        </div>
+        <p class="hero-note" data-i18n="hero.note">Без зайвого жаргону. Українською. У твоєму темпі.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <button class="linux-symbol music-penguin" id="music-penguin" type="button" aria-label="Play Tuff Linux music">
+          <img src="assets/alien-tux.jpg" alt="Alien Tux">
+        </button>
+        <audio id="tuff-music" preload="none" loop>
+          <source src="assets/alien-music.mp3" type="audio/mpeg">
+        </audio>
+        <div class="floating-card card-top"><span class="card-dot"></span> open source</div>
+        <div class="floating-card card-bottom"><span>01</span> <span data-i18n="hero.slogan">Твоя система — твої правила</span></div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> <span data-i18n="hero.scroll">Гортай далі</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about.eyebrow">01 / Знайомство</p>
+        <h2 data-i18n-html="about.title">То що таке <span class="text-gradient">Linux?</span></h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-lead" data-i18n="about.lead">Якщо коротко: це операційна система — програма, яка допомагає комп’ютеру працювати та запускати інші програми.</p>
+        <div class="about-detail">
+          <p data-i18n-html="about.detail">Точніше, Linux — це ядро системи. Разом із програмами та інструментами воно утворює різні системи, які називають <strong>дистрибутивами</strong>. Багато з них безкоштовні, мають відкритий код і розвиваються спільнотами людей.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="feature-icon" aria-hidden="true">✳</span><span><strong data-i18n="about.feature1.title">Відкритий код</strong><small data-i18n="about.feature1.copy">Його можна вивчати й покращувати.</small></span></div>
+            <div class="feature"><span class="feature-icon" aria-hidden="true">◈</span><span><strong data-i18n="about.feature2.title">Багато варіантів</strong><small data-i18n="about.feature2.copy">Є системи для різних потреб і комп’ютерів.</small></span></div>
+            <div class="feature"><span class="feature-icon" aria-hidden="true">↗</span><span><strong data-i18n="about.feature3.title">Підтримка спільноти</strong><small data-i18n="about.feature3.copy">Посібники та поради доступні онлайн.</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section distros-section" id="distros">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow" data-i18n="distros.eyebrow">02 / Знайди свій варіант</p>
+          <h2 data-i18n-html="distros.title">З чого <span class="text-gradient">почати?</span></h2>
+        </div>
+        <p class="section-aside" data-i18n="distros.aside">Ось кілька популярних дистрибутивів, які часто радять новачкам.</p>
+      </div>
+      <div class="distro-grid">
+        <article class="distro-card">
+          <div class="distro-top"><img class="distro-logo" src="assets/ubuntu.jpg" alt="Ubuntu logo"><span class="distro-tag" data-i18n="distro.beginner">Для початківців</span></div>
+          <h3>Ubuntu</h3>
+          <p data-i18n="distro.ubuntu.copy">Популярний вибір із великою спільнотою та зрозумілим графічним інтерфейсом.</p>
+          <a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener noreferrer"><span data-i18n="distro.site">Офіційний сайт</span> <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="distro-card">
+          <div class="distro-top"><img class="distro-logo" src="assets/linux-mint.jpg" alt="Linux Mint logo"><span class="distro-tag" data-i18n="distro.easy">Зручний старт</span></div>
+          <h3>Linux Mint</h3>
+          <p data-i18n="distro.mint.copy">Звичне робоче середовище та простий перехід із Windows.</p>
+          <a href="https://linuxmint.com/download.php" target="_blank" rel="noopener noreferrer"><span data-i18n="distro.site">Офіційний сайт</span> <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="distro-card">
+          <div class="distro-top"><img class="distro-logo" src="assets/fedora.jpg" alt="Fedora logo"><span class="distro-tag" data-i18n="distro.modern">Сучасний</span></div>
+          <h3>Fedora</h3>
+          <p data-i18n="distro.fedora.copy">Свіжі технології та різні варіанти робочого середовища.</p>
+          <a href="https://fedoraproject.org/workstation/download" target="_blank" rel="noopener noreferrer"><span data-i18n="distro.site">Офіційний сайт</span> <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="distro-card">
+          <div class="distro-top"><img class="distro-logo tuxedo-logo" src="assets/tuff-linux-brand.png" alt="TUXEDO OS logo"><span class="distro-tag" data-i18n="distro.tuxedo.tag">Від TUXEDO</span></div>
+          <h3>TUXEDO OS</h3>
+          <p data-i18n="distro.tuxedo.copy">Tuxedo-OS це наша створена система в якій багато функцій для IT-спеціалістів від Artem Myha
+        
+            
+        .</p>
+          <a href="https://os.tuxedocomputers.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="distro.tuxedo.link">Офіційні ISO-файли</span> <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <div class="tap-game">
+        <div class="tap-game-copy">
+          <p class="eyebrow" data-i18n="game.eyebrow">Мінігра / TUXEDO OS</p>
+          <h3 data-i18n="game.title">Тапни TUXEDO!</h3>
+          <p data-i18n="game.copy">Запусти раунд і натискай на логотип якомога швидше за 15 секунд.</p>
+        </div>
+        <div class="tap-game-panel">
+          <p class="game-status" id="game-status" role="status" aria-live="polite" data-i18n="game.ready">Готовий? Натисни «Старт»!</p>
+          <button class="tap-button" id="tap-button" type="button" disabled aria-label="Тапати на TUXEDO OS" data-i18n-aria="game.tapAria">
+            <span class="tap-logo" aria-hidden="true">T</span>
+            <span data-i18n="game.tap">Тапай!</span>
+          </button>
+          <div class="game-stats">
+            <div><span data-i18n="game.taps">Тапи</span><strong id="tap-score">0</strong></div>
+            <div><span data-i18n="game.time">Час</span><strong><span id="tap-time">15</span><span data-i18n="game.seconds">с</span></strong></div>
+          </div>
+          <button class="button button-primary game-start" id="game-start" type="button" data-i18n="game.start">Старт гри</button>
+        </div>
+      </div>
+      <p class="section-footnote" data-i18n="distros.footnote">Перш ніж встановлювати систему, перевір її у віртуальній машині або в режимі Live USB. Завжди збережи резервну копію важливих файлів.</p>
+    </section>
+
+    <section class="section install-section" id="install">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow" data-i18n="install.eyebrow">03 / Встановлення без поспіху</p>
+          <h2 data-i18n-html="install.title">Спочатку <span class="text-gradient">спробуй.</span></h2>
+        </div>
+        <p class="section-aside" data-i18n="install.aside">План для першого знайомства. Встановлювати Linux на комп’ютер необов’язково.</p>
+      </div>
+      <div class="install-layout">
+        <div class="install-steps">
+          <article class="install-step">
+            <span class="step-number">01</span>
+            <div><h3 data-i18n="install.step1.title">Обери дистрибутив</h3><p data-i18n-html="install.step1.copy">Для початку підійдуть Ubuntu або Linux Mint. Завантаж образ лише з <a href="#distros">офіційного сайту дистрибутива</a> і перевір системні вимоги для своєї моделі комп’ютера.</p></div>
+          </article>
+          <article class="install-step">
+            <span class="step-number">02</span>
+            <div><h3 data-i18n="install.step2.title">Зроби резервну копію</h3><p data-i18n="install.step2.copy">Збережи важливі документи, фото та паролі на окремий носій або у надійне сховище. Переконайся, що копія відкривається.</p></div>
+          </article>
+          <article class="install-step">
+            <span class="step-number">03</span>
+            <div><h3 data-i18n="install.step3.title">Спробуй без встановлення</h3><p data-i18n="install.step3.copy">Створи Live USB за офіційною інструкцією дистрибутива, перезавантаж комп’ютер із флешки й обери режим пробного запуску, якщо він доступний. Зміни в такому режимі зазвичай не встановлюють систему на диск.</p></div>
+          </article>
+          <article class="install-step">
+            <span class="step-number">04</span>
+            <div><h3 data-i18n="install.step4.title">Встановлюй лише впевнено</h3><p data-i18n="install.step4.copy">Інсталятор може змінити розділи диска й видалити наявні дані. Не обирай стирання диска чи зміну розділів, якщо не розумієш наслідків; попроси допомогу досвідченої людини.</p></div>
+          </article>
+        </div>
+        <aside class="install-checklist">
+          <p class="eyebrow" data-i18n="install.check.eyebrow">Перед стартом</p>
+          <h3 data-i18n="install.check.title">Мій список підготовки</h3>
+          <label class="check-item"><input type="checkbox" class="install-check"><span data-i18n="install.check.item1">Я обрав дистрибутив на офіційному сайті</span></label>
+          <label class="check-item"><input type="checkbox" class="install-check"><span data-i18n="install.check.item2">Я зберіг і перевірив резервну копію</span></label>
+          <label class="check-item"><input type="checkbox" class="install-check"><span data-i18n="install.check.item3">Я готовий спершу протестувати Linux без встановлення</span></label>
+          <p class="check-progress" id="check-progress" role="status" aria-live="polite">Виконано: 0 з 3</p>
+          <div class="install-warning"><span aria-hidden="true">!</span><p><strong data-i18n="install.warning.title">Важливо</strong><br><span data-i18n="install.warning.copy">Не продовжуй, якщо не маєш резервної копії або не впевнений, який диск обираєш.</span></p></div>
+        </aside>
+      </div>
+      <p class="section-footnote" data-i18n="install.footnote">Пункти тут — загальні поради. Кроки інсталятора й доступність Live USB залежать від обраного дистрибутива та комп’ютера. Дотримуйся актуальної офіційної документації.</p>
+    </section>
+
+    <section class="section terminal-section" id="terminal">
+      <div class="terminal-copy">
+        <p class="eyebrow" data-i18n="terminal.eyebrow">04 / Не бійся термінала</p>
+        <h2 data-i18n-html="terminal.title">Кілька команд<br>для <span class="text-gradient">першого знайомства.</span></h2>
+        <p data-i18n="terminal.intro">Термінал — це спосіб давати системі команди текстом. Почни з цих безпечних команд для перегляду інформації.</p>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span data-i18n="terminal.label">Термінал</span><span class="terminal-lock" aria-label="Лише перегляд" data-i18n-aria="terminal.lock">●</span></div>
+        <div class="terminal-body">
+          <p class="terminal-comment" data-i18n="terminal.comment1"># Де я зараз?</p>
+          <div class="command-row"><code><span class="prompt">$</span> pwd</code><button class="copy-button" type="button" data-copy="pwd" aria-label="Скопіювати команду pwd" data-i18n="terminal.copy" data-i18n-aria="terminal.copyAria">Копіювати</button></div>
+          <p class="terminal-comment" data-i18n="terminal.comment2"># Яка це система?</p>
+          <div class="command-row"><code><span class="prompt">$</span> uname -s</code><button class="copy-button" type="button" data-copy="uname -s" aria-label="Скопіювати команду uname -s" data-i18n="terminal.copy" data-i18n-aria="terminal.copyAria">Копіювати</button></div>
+          <p class="terminal-comment" data-i18n="terminal.comment3"># Що є в цій папці?</p>
+          <div class="command-row"><code><span class="prompt">$</span> ls</code><button class="copy-button" type="button" data-copy="ls" aria-label="Скопіювати команду ls" data-i18n="terminal.copy" data-i18n-aria="terminal.copyAria">Копіювати</button></div>
+          <p class="terminal-hint" role="status" aria-live="polite" data-i18n="terminal.hint">Ці команди показують інформацію і не змінюють файли.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow" data-i18n="closing.eyebrow">Твій шлях — твій вибір</p>
+      <h2 data-i18n-html="closing.title">Спробуй. <span class="text-gradient">Досліджуй.</span> Навчайся.</h2>
+      <p data-i18n="closing.copy">Найкращий спосіб познайомитися з Linux — почати з цікавості та робити резервні копії.</p>
+      <a class="button button-primary" href="#main"><span data-i18n="closing.button">На початок</span> <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#" aria-label="Tuff Linux — на головну" data-i18n-aria="brand.home"><img class="brand-icon" src="assets/tuxedo-penguin.jpg" alt=""><span class="brand-name">Tuff <span class="brand-accent">Linux</span></span></a>
+    <p data-i18n="footer.copy">Навчальний проєкт про Linux · Створено з цікавістю до відкритого коду</p>
+    <span class="footer-year" data-i18n="footer.language">Українською 🇺🇦</span>
+  </footer>
+</body>
+</html>
