@@ -1,4 +1,4 @@
-const CACHE_NAME = "tuff-linux-v4";
+const CACHE_NAME = "tuff-linux-v5";
 const APP_FILES = [
   "./",
   "./index.html",
