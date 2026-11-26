@@ -7,6 +7,7 @@ const translations = {
     "nav.label": "Основна навігація",
     "nav.about": "Про Linux",
     "nav.distros": "Дистрибутиви",
+    "nav.games": "Ігри",
     "nav.install": "Встановлення",
     "nav.terminal": "Термінал",
     "language.label": "Мова",
@@ -46,6 +47,8 @@ const translations = {
     "distro.tuxedo.copy": "Tuxedo-OS це наша створена система в якій багато функцій для IT-спеціалістів від Artem Myha.",
     "distro.tuxedo.link": "Офіційні ISO-файли",
     "distros.footnote": "Перш ніж встановлювати систему, перевір її у віртуальній машині або в режимі Live USB. Завжди збережи резервну копію важливих файлів.",
+    "games.eyebrow": "03 / Відпочинок",
+    "games.title": "Ігри для <span class=\"text-gradient\">перерви.</span>",
     "game.eyebrow": "Мінігра / TUXEDO OS",
     "game.title": "Тапни TUXEDO!",
     "game.copy": "Запусти раунд і натискай на логотип якомога швидше за 15 секунд.",
@@ -58,7 +61,31 @@ const translations = {
     "game.time": "Час",
     "game.seconds": "с",
     "game.start": "Старт гри",
-    "install.eyebrow": "03 / Встановлення без поспіху",
+    "flappy.eyebrow": "Мінігра",
+    "flappy.title": "Політ пінгвіна",
+    "flappy.instructions": "Натискай пробіл, стрілку вгору або кнопку, щоб летіти й оминати перешкоди.",
+    "flappy.ready": "Натисни «Старт», щоб грати.",
+    "flappy.playing": "Гра триває! Рахунок: {score}",
+    "flappy.over": "Гру завершено! Твій рахунок: {score}",
+    "flappy.start": "Старт",
+    "flappy.restart": "Ще раз",
+    "flappy.flap": "Стрибок!",
+    "flappy.canvasAria": "Гра «Політ пінгвіна». Натисни Старт, щоб грати.",
+    "gta.eyebrow": "Гра",
+    "gta.copy": "Культова пригодницька гра з відкритим світом. Перейдіть на офіційний сайт Rockstar Games, щоб дізнатися про гру та доступні версії.",
+    "gta.link": "Сайт Rockstar Games",
+    "drive.eyebrow": "Авторська мінігра",
+    "drive.instructions": "Керуй машиною стрілками або кнопками й уникай інших авто.",
+    "drive.score": "Рахунок",
+    "drive.ready": "Натисни «Старт», щоб їхати.",
+    "drive.playing": "Їдь! Рахунок: {score}",
+    "drive.over": "Зіткнення! Твій рахунок: {score}",
+    "drive.start": "Старт",
+    "drive.restart": "Ще раз",
+    "drive.left": "Ліворуч",
+    "drive.right": "Праворуч",
+    "drive.canvasAria": "Гра Tuff Road Run. Керуй стрілками вліво та вправо.",
+    "install.eyebrow": "04 / Встановлення без поспіху",
     "install.title": "Спочатку <span class=\"text-gradient\">спробуй.</span>",
     "install.aside": "План для першого знайомства. Встановлювати Linux на комп’ютер необов’язково.",
     "install.step1.title": "Обери дистрибутив",
@@ -78,7 +105,7 @@ const translations = {
     "install.warning.title": "Важливо",
     "install.warning.copy": "Не продовжуй, якщо не маєш резервної копії або не впевнений, який диск обираєш.",
     "install.footnote": "Пункти тут — загальні поради. Кроки інсталятора й доступність Live USB залежать від обраного дистрибутива та комп’ютера. Дотримуйся актуальної офіційної документації.",
-    "terminal.eyebrow": "04 / Не бійся термінала",
+    "terminal.eyebrow": "05 / Не бійся термінала",
     "terminal.title": "Кілька команд<br>для <span class=\"text-gradient\">першого знайомства.</span>",
     "terminal.intro": "Термінал — це спосіб давати системі команди текстом. Почни з цих безпечних команд для перегляду інформації.",
     "terminal.label": "Термінал",
@@ -106,6 +133,7 @@ const translations = {
     "nav.label": "Hlavní navigace",
     "nav.about": "O Linuxu",
     "nav.distros": "Distribuce",
+    "nav.games": "Hry",
     "nav.install": "Instalace",
     "nav.terminal": "Terminál",
     "language.label": "Jazyk",
@@ -145,6 +173,8 @@ const translations = {
     "distro.tuxedo.copy": "Tuxedo-OS je náš systém s mnoha funkcemi pro IT specialisty, vytvořený Artemem Myhou.",
     "distro.tuxedo.link": "Oficiální ISO obrazy",
     "distros.footnote": "Než systém nainstaluješ, vyzkoušej ho ve virtuálním počítači nebo z Live USB. Vždy si zálohuj důležité soubory.",
+    "games.eyebrow": "03 / Odpočinek",
+    "games.title": "Hry na <span class=\"text-gradient\">přestávku.</span>",
     "game.eyebrow": "Minihra / TUXEDO OS",
     "game.title": "Klikni na TUXEDO!",
     "game.copy": "Spusť kolo a během 15 sekund klikej na logo co nejrychleji.",
@@ -157,7 +187,31 @@ const translations = {
     "game.time": "Čas",
     "game.seconds": "s",
     "game.start": "Spustit hru",
-    "install.eyebrow": "03 / Instalace bez spěchu",
+    "flappy.eyebrow": "Minihra",
+    "flappy.title": "Let tučňáka",
+    "flappy.instructions": "Mačkej mezerník, šipku nahoru nebo tlačítko a vyhýbej se překážkám.",
+    "flappy.ready": "Hru spustíš tlačítkem Start.",
+    "flappy.playing": "Hra běží! Skóre: {score}",
+    "flappy.over": "Konec hry! Tvé skóre: {score}",
+    "flappy.start": "Start",
+    "flappy.restart": "Znovu",
+    "flappy.flap": "Vzlétnout!",
+    "flappy.canvasAria": "Hra Let tučňáka. Stiskni Start a hraj.",
+    "gta.eyebrow": "Hra",
+    "gta.copy": "Kultovní dobrodružná hra v otevřeném světě. Informace o hře a dostupných verzích najdeš na oficiálním webu Rockstar Games.",
+    "gta.link": "Web Rockstar Games",
+    "drive.eyebrow": "Původní minihra",
+    "drive.instructions": "Řiď auto šipkami nebo tlačítky a vyhýbej se ostatním vozům.",
+    "drive.score": "Skóre",
+    "drive.ready": "Stiskni Start a vyjeď.",
+    "drive.playing": "Jeď! Skóre: {score}",
+    "drive.over": "Nehoda! Tvé skóre: {score}",
+    "drive.start": "Start",
+    "drive.restart": "Znovu",
+    "drive.left": "Doleva",
+    "drive.right": "Doprava",
+    "drive.canvasAria": "Hra Tuff Road Run. Řiď šipkami doleva a doprava.",
+    "install.eyebrow": "04 / Instalace bez spěchu",
     "install.title": "Nejdřív si ho <span class=\"text-gradient\">vyzkoušej.</span>",
     "install.aside": "Plán pro první seznámení. Linux nemusíš hned instalovat do počítače.",
     "install.step1.title": "Vyber si distribuci",
@@ -177,7 +231,7 @@ const translations = {
     "install.warning.title": "Důležité",
     "install.warning.copy": "Nepokračuj, pokud nemáš zálohu nebo si nejsi jistý, který disk vybíráš.",
     "install.footnote": "Toto jsou obecné rady. Postup instalace i dostupnost Live USB závisí na distribuci a počítači. Řiď se aktuální oficiální dokumentací.",
-    "terminal.eyebrow": "04 / Neboj se terminálu",
+    "terminal.eyebrow": "05 / Neboj se terminálu",
     "terminal.title": "Pár příkazů<br>pro <span class=\"text-gradient\">první seznámení.</span>",
     "terminal.intro": "Terminál umožňuje zadávat systému textové příkazy. Začni těmito bezpečnými příkazy, které jen zobrazují informace.",
     "terminal.label": "Terminál",
@@ -212,6 +266,18 @@ const checkProgress = document.querySelector("#check-progress");
 const installChecks = document.querySelectorAll(".install-check");
 const musicPenguin = document.querySelector("#music-penguin");
 const tuffMusic = document.querySelector("#tuff-music");
+const flappyCanvas = document.querySelector("#flappy-canvas");
+const flappyContext = flappyCanvas.getContext("2d");
+const flappyStatus = document.querySelector("#flappy-status");
+const flappyStartButton = document.querySelector("#flappy-start");
+const flappyFlapButton = document.querySelector("#flappy-flap");
+const driveCanvas = document.querySelector("#drive-canvas");
+const driveContext = driveCanvas.getContext("2d");
+const driveScoreElement = document.querySelector("#drive-score");
+const driveStatus = document.querySelector("#drive-status");
+const driveStartButton = document.querySelector("#drive-start");
+const driveLeftButton = document.querySelector("#drive-left");
+const driveRightButton = document.querySelector("#drive-right");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 let activeLanguage = "uk";
@@ -219,6 +285,23 @@ let score = 0;
 let secondsRemaining = 15;
 let gameTimer = null;
 let gameState = "ready";
+let flappyState = "ready";
+let flappyScore = 0;
+let flappyBirdY = 120;
+let flappyBirdVelocity = 0;
+let flappyPipes = [];
+let flappyAnimation = 0;
+let flappyLastFrame = 0;
+let driveState = "ready";
+let driveScore = 0;
+let driveLane = 1;
+let driveCars = [];
+let driveAnimation = 0;
+let driveLastFrame = 0;
+let driveSpawnTimer = 0;
+let driveRoadOffset = 0;
+const driveLanes = [130, 240, 350];
+const drivePlayerY = 220;
 const savedLanguage = localStorage.getItem("tuff-language");
 const savedTheme = localStorage.getItem("tuff-theme");
 
@@ -244,6 +327,16 @@ function updateGameStatus() {
   gameStatus.textContent = text(statusKey, { score });
 }
 
+function updateFlappyStatus() {
+  const key = flappyState === "playing" ? "flappy.playing" : flappyState === "over" ? "flappy.over" : "flappy.ready";
+  flappyStatus.textContent = text(key, { score: flappyScore });
+}
+
+function updateDriveStatus() {
+  const key = driveState === "playing" ? "drive.playing" : driveState === "over" ? "drive.over" : "drive.ready";
+  driveStatus.textContent = text(key, { score: driveScore });
+}
+
 function setLanguage(language) {
   activeLanguage = translations[language] ? language : "uk";
   document.documentElement.lang = activeLanguage;
@@ -265,6 +358,10 @@ function setLanguage(language) {
   updateThemeLabel();
   updateCheckProgress();
   updateGameStatus();
+  updateFlappyStatus();
+  flappyStartButton.textContent = text(flappyState === "over" ? "flappy.restart" : "flappy.start");
+  updateDriveStatus();
+  driveStartButton.textContent = text(driveState === "over" ? "drive.restart" : "drive.start");
 }
 
 if (savedTheme === "dark") {
@@ -352,6 +449,257 @@ tapButton.addEventListener("click", () => {
   score += 1;
   tapScore.textContent = String(score);
 });
+
+function drawFlappyScene() {
+  const width = flappyCanvas.width;
+  const height = flappyCanvas.height;
+  const groundHeight = 28;
+  const gap = 88;
+  const pipeWidth = 48;
+
+  flappyContext.clearRect(0, 0, width, height);
+  flappyContext.fillStyle = "#dff1d9";
+  flappyContext.fillRect(0, 0, width, height);
+  flappyContext.fillStyle = "#b8dcad";
+  flappyContext.fillRect(0, height - groundHeight, width, groundHeight);
+
+  flappyPipes.forEach((pipe) => {
+    const openingTop = pipe.gapY - gap / 2;
+    const openingBottom = pipe.gapY + gap / 2;
+    flappyContext.fillStyle = "#2e7753";
+    flappyContext.fillRect(pipe.x, 0, pipeWidth, openingTop);
+    flappyContext.fillRect(pipe.x, openingBottom, pipeWidth, height - groundHeight - openingBottom);
+    flappyContext.fillStyle = "#1d563c";
+    flappyContext.fillRect(pipe.x - 4, openingTop - 12, pipeWidth + 8, 12);
+    flappyContext.fillRect(pipe.x - 4, openingBottom, pipeWidth + 8, 12);
+  });
+
+  flappyContext.save();
+  flappyContext.translate(86, flappyBirdY);
+  flappyContext.fillStyle = "#26794e";
+  flappyContext.beginPath();
+  flappyContext.ellipse(0, 0, 16, 13, 0, 0, Math.PI * 2);
+  flappyContext.fill();
+  flappyContext.fillStyle = "#f4f7ed";
+  flappyContext.beginPath();
+  flappyContext.ellipse(3, 3, 9, 8, 0, 0, Math.PI * 2);
+  flappyContext.fill();
+  flappyContext.fillStyle = "#142019";
+  flappyContext.beginPath();
+  flappyContext.arc(7, -4, 2, 0, Math.PI * 2);
+  flappyContext.fill();
+  flappyContext.fillStyle = "#f3a43b";
+  flappyContext.beginPath();
+  flappyContext.moveTo(14, 0);
+  flappyContext.lineTo(24, 4);
+  flappyContext.lineTo(14, 7);
+  flappyContext.closePath();
+  flappyContext.fill();
+  flappyContext.restore();
+}
+
+function finishFlappyGame() {
+  flappyState = "over";
+  flappyStartButton.disabled = false;
+  flappyStartButton.textContent = text("flappy.restart");
+  updateFlappyStatus();
+}
+
+function flapFlappyBird() {
+  if (flappyState !== "playing") return;
+  flappyBirdVelocity = -300;
+}
+
+function runFlappyFrame(timestamp) {
+  if (flappyState !== "playing") return;
+  const delta = Math.min((timestamp - flappyLastFrame) / 1000, 0.032);
+  flappyLastFrame = timestamp;
+  flappyBirdVelocity += 760 * delta;
+  flappyBirdY += flappyBirdVelocity * delta;
+
+  flappyPipes.forEach((pipe) => {
+    pipe.x -= 145 * delta;
+    if (!pipe.passed && pipe.x + 48 < 86) {
+      pipe.passed = true;
+      flappyScore += 1;
+      updateFlappyStatus();
+    }
+  });
+
+  if (!flappyPipes.length || flappyPipes[flappyPipes.length - 1].x < 290) {
+    flappyPipes.push({ x: flappyCanvas.width + 10, gapY: 72 + Math.random() * 105, passed: false });
+  }
+  flappyPipes = flappyPipes.filter((pipe) => pipe.x > -60);
+
+  const collision = flappyBirdY < 12 || flappyBirdY > flappyCanvas.height - 42 ||
+    flappyPipes.some((pipe) => {
+      const overlapX = 86 + 16 > pipe.x && 86 - 16 < pipe.x + 48;
+      const outsideGap = flappyBirdY - 13 < pipe.gapY - 44 || flappyBirdY + 13 > pipe.gapY + 44;
+      return overlapX && outsideGap;
+    });
+
+  drawFlappyScene();
+  if (collision) {
+    finishFlappyGame();
+    return;
+  }
+  flappyAnimation = window.requestAnimationFrame(runFlappyFrame);
+}
+
+flappyStartButton.addEventListener("click", () => {
+  window.cancelAnimationFrame(flappyAnimation);
+  flappyState = "playing";
+  flappyScore = 0;
+  flappyBirdY = 120;
+  flappyBirdVelocity = 0;
+  flappyPipes = [];
+  flappyStartButton.disabled = true;
+  flappyStartButton.textContent = text("flappy.start");
+  updateFlappyStatus();
+  drawFlappyScene();
+  flappyLastFrame = performance.now();
+  flappyAnimation = window.requestAnimationFrame(runFlappyFrame);
+  flappyCanvas.focus();
+});
+
+flappyFlapButton.addEventListener("click", flapFlappyBird);
+flappyCanvas.addEventListener("pointerdown", (event) => {
+  event.preventDefault();
+  flapFlappyBird();
+});
+flappyCanvas.addEventListener("keydown", (event) => {
+  if (event.code !== "Space" && event.code !== "ArrowUp") return;
+  event.preventDefault();
+  flapFlappyBird();
+});
+
+drawFlappyScene();
+
+function drawDriveCar(x, y, color) {
+  driveContext.fillStyle = "#202a25";
+  driveContext.fillRect(x - 21, y - 16, 5, 14);
+  driveContext.fillRect(x + 16, y - 16, 5, 14);
+  driveContext.fillRect(x - 21, y + 7, 5, 14);
+  driveContext.fillRect(x + 16, y + 7, 5, 14);
+  driveContext.fillStyle = color;
+  driveContext.fillRect(x - 16, y - 23, 32, 46);
+  driveContext.fillStyle = "#c8e5e2";
+  driveContext.fillRect(x - 10, y - 14, 20, 12);
+  driveContext.fillStyle = "#8fa9a4";
+  driveContext.fillRect(x - 10, y + 3, 20, 8);
+  driveContext.fillStyle = "#ffe5a0";
+  driveContext.fillRect(x - 13, y - 22, 6, 3);
+  driveContext.fillRect(x + 7, y - 22, 6, 3);
+}
+
+function drawDriveScene() {
+  const width = driveCanvas.width;
+  const height = driveCanvas.height;
+  driveContext.fillStyle = "#dcefd3";
+  driveContext.fillRect(0, 0, width, height);
+  driveContext.fillStyle = "#34403b";
+  driveContext.fillRect(75, 0, 330, height);
+  driveContext.fillStyle = "#91b887";
+  driveContext.fillRect(70, 0, 5, height);
+  driveContext.fillRect(405, 0, 5, height);
+
+  driveContext.fillStyle = "#d7d9c6";
+  [185, 295].forEach((x) => {
+    for (let y = -44; y < height; y += 52) {
+      driveContext.fillRect(x - 2, y + driveRoadOffset, 4, 27);
+    }
+  });
+
+  driveCars.forEach((car) => drawDriveCar(driveLanes[car.lane], car.y, car.color));
+  drawDriveCar(driveLanes[driveLane], drivePlayerY, "#26845a");
+}
+
+function finishDriveGame() {
+  driveState = "over";
+  driveStartButton.disabled = false;
+  driveStartButton.textContent = text("drive.restart");
+  driveLeftButton.disabled = true;
+  driveRightButton.disabled = true;
+  updateDriveStatus();
+}
+
+function moveDriveLane(direction) {
+  if (driveState !== "playing") return;
+  driveLane = Math.max(0, Math.min(driveLanes.length - 1, driveLane + direction));
+  drawDriveScene();
+}
+
+function runDriveFrame(timestamp) {
+  if (driveState !== "playing") return;
+  const delta = Math.min((timestamp - driveLastFrame) / 1000, 0.032);
+  driveLastFrame = timestamp;
+  driveRoadOffset = (driveRoadOffset + 155 * delta) % 52;
+  driveSpawnTimer -= delta;
+
+  if (driveSpawnTimer <= 0) {
+    const colors = ["#d76f56", "#537db2", "#d4a447", "#8465a8"];
+    driveCars.push({
+      lane: Math.floor(Math.random() * driveLanes.length),
+      y: -50,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      passed: false
+    });
+    driveSpawnTimer = 0.95;
+  }
+
+  driveCars.forEach((car) => {
+    car.y += 165 * delta;
+    if (!car.passed && car.y > drivePlayerY + 24) {
+      car.passed = true;
+      driveScore += 1;
+      driveScoreElement.textContent = String(driveScore);
+      updateDriveStatus();
+    }
+  });
+
+  const collision = driveCars.some((car) =>
+    car.lane === driveLane && car.y + 23 > drivePlayerY - 23 && car.y - 23 < drivePlayerY + 23
+  );
+  driveCars = driveCars.filter((car) => car.y < driveCanvas.height + 24);
+  drawDriveScene();
+
+  if (collision) {
+    finishDriveGame();
+    return;
+  }
+  driveAnimation = window.requestAnimationFrame(runDriveFrame);
+}
+
+driveStartButton.addEventListener("click", () => {
+  window.cancelAnimationFrame(driveAnimation);
+  driveState = "playing";
+  driveScore = 0;
+  driveLane = 1;
+  driveCars = [];
+  driveRoadOffset = 0;
+  driveSpawnTimer = 0.55;
+  driveScoreElement.textContent = "0";
+  driveStartButton.disabled = true;
+  driveStartButton.textContent = text("drive.start");
+  driveLeftButton.disabled = false;
+  driveRightButton.disabled = false;
+  updateDriveStatus();
+  drawDriveScene();
+  driveLastFrame = performance.now();
+  driveAnimation = window.requestAnimationFrame(runDriveFrame);
+  driveCanvas.focus();
+});
+
+driveLeftButton.addEventListener("click", () => moveDriveLane(-1));
+driveRightButton.addEventListener("click", () => moveDriveLane(1));
+driveCanvas.addEventListener("keydown", (event) => {
+  if (event.code !== "ArrowLeft" && event.code !== "ArrowRight") return;
+  event.preventDefault();
+  if (event.repeat) return;
+  moveDriveLane(event.code === "ArrowLeft" ? -1 : 1);
+});
+
+drawDriveScene();
 
 musicPenguin.addEventListener("click", async () => {
   if (tuffMusic.paused) {

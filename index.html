@@ -28,6 +28,7 @@
     <nav class="main-nav" aria-label="Основна навігація" data-i18n-aria="nav.label">
       <a href="#about" data-i18n="nav.about">Про Linux</a>
       <a href="#distros" data-i18n="nav.distros">Дистрибутиви</a>
+      <a href="#games" data-i18n="nav.games">Ігри</a>
       <a href="#install" data-i18n="nav.install">Встановлення</a>
       <a href="#terminal" data-i18n="nav.terminal">Термінал</a>
     </nav>
@@ -50,6 +51,7 @@
     <nav class="mobile-nav" id="mobile-menu" aria-label="Мобільна навігація" data-i18n-aria="nav.label">
       <a href="#about" data-i18n="nav.about">Про Linux</a>
       <a href="#distros" data-i18n="nav.distros">Дистрибутиви</a>
+      <a href="#games" data-i18n="nav.games">Ігри</a>
       <a href="#install" data-i18n="nav.install">Встановлення</a>
       <a href="#terminal" data-i18n="nav.terminal">Термінал</a>
     </nav>
@@ -137,6 +139,14 @@
           <a href="https://os.tuxedocomputers.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="distro.tuxedo.link">Офіційні ISO-файли</span> <span aria-hidden="true">↗</span></a>
         </article>
       </div>
+      <p class="section-footnote" data-i18n="distros.footnote">Перш ніж встановлювати систему, перевір її у віртуальній машині або в режимі Live USB. Завжди збережи резервну копію важливих файлів.</p>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="games.eyebrow">03 / Відпочинок</p>
+        <h2 data-i18n-html="games.title">Ігри для <span class="text-gradient">перерви.</span></h2>
+      </div>
       <div class="tap-game">
         <div class="tap-game-copy">
           <p class="eyebrow" data-i18n="game.eyebrow">Мінігра / TUXEDO OS</p>
@@ -156,7 +166,48 @@
           <button class="button button-primary game-start" id="game-start" type="button" data-i18n="game.start">Старт гри</button>
         </div>
       </div>
-      <p class="section-footnote" data-i18n="distros.footnote">Перш ніж встановлювати систему, перевір її у віртуальній машині або в режимі Live USB. Завжди збережи резервну копію важливих файлів.</p>
+      <div class="extras-grid">
+        <section class="flappy-game" aria-labelledby="flappy-title">
+          <div class="extras-heading">
+            <p class="eyebrow" data-i18n="flappy.eyebrow">Мінігра</p>
+            <h3 id="flappy-title" data-i18n="flappy.title">Політ пінгвіна</h3>
+            <p data-i18n="flappy.instructions">Натискай пробіл, стрілку вгору або кнопку, щоб летіти й оминати перешкоди.</p>
+          </div>
+          <canvas class="flappy-canvas" id="flappy-canvas" width="480" height="260" tabindex="0" role="application" aria-label="Гра «Політ пінгвіна». Натисни Старт, щоб грати." data-i18n-aria="flappy.canvasAria"></canvas>
+          <p class="flappy-status" id="flappy-status" role="status" aria-live="polite" data-i18n="flappy.ready">Натисни «Старт», щоб грати.</p>
+          <div class="flappy-controls">
+            <button class="button button-primary" id="flappy-start" type="button" data-i18n="flappy.start">Старт</button>
+            <button class="button button-quiet" id="flappy-flap" type="button" data-i18n="flappy.flap">Стрибок!</button>
+          </div>
+        </section>
+        <article class="gta-card">
+          <p class="eyebrow" data-i18n="gta.eyebrow">Гра</p>
+          <h3>Grand Theft Auto: San Andreas</h3>
+          <p data-i18n="gta.copy">Культова пригодницька гра з відкритим світом. Перейдіть на офіційний сайт Rockstar Games, щоб дізнатися про гру та доступні версії.</p>
+          <a href="https://www.rockstargames.com/games/sanandreas" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="gta.link">Сайт Rockstar Games</span> <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+      <section class="driving-game" aria-labelledby="drive-title">
+        <div class="drive-layout">
+          <div class="drive-copy">
+            <p class="eyebrow" data-i18n="drive.eyebrow">Авторська мінігра</p>
+            <h3 id="drive-title">Tuff Road Run</h3>
+            <p data-i18n="drive.instructions">Керуй машиною стрілками або кнопками й уникай інших авто.</p>
+            <p class="drive-score"><span data-i18n="drive.score">Рахунок</span>: <strong id="drive-score">0</strong></p>
+            <p class="drive-status" id="drive-status" role="status" aria-live="polite" data-i18n="drive.ready">Натисни «Старт», щоб їхати.</p>
+            <div class="drive-controls">
+              <button class="button button-primary" id="drive-start" type="button" data-i18n="drive.start">Старт</button>
+              <div class="drive-steering">
+                <button class="button button-quiet" id="drive-left" type="button" aria-label="Ліворуч" data-i18n-aria="drive.left" disabled>←</button>
+                <button class="button button-quiet" id="drive-right" type="button" aria-label="Праворуч" data-i18n-aria="drive.right" disabled>→</button>
+              </div>
+            </div>
+          </div>
+          <canvas class="driving-canvas" id="drive-canvas" width="480" height="280" tabindex="0" role="application" aria-label="Гра Tuff Road Run. Керуй стрілками вліво та вправо." data-i18n-aria="drive.canvasAria"></canvas>
+        </div>
+      </section>
     </section>
 
     <section class="section install-section" id="install">
